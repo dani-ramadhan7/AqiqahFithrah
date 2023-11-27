@@ -1,0 +1,86 @@
+<?php
+$packages = [
+  [
+    'id' => 'Assalamah',
+    'title' => 'Paket Assalamah',
+    'priceMatang' => '1,650,000',
+    'priceNasiBox' => '2,400,000',
+    'tusuk' => 200,
+    'box' => 50,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://wa.link/0grkw2',
+  ],
+  [
+    'id' => 'BayanWadhih',
+    'title' => 'Paket Bayan Wadhih',
+    'priceMatang' => '1,850,000',
+    'priceNasiBox' => '2,900,000',
+    'tusuk' => 250,
+    'box' => 70,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://wa.link/haczyg',
+  ],
+  [
+    'id' => 'CamilaJiddan',
+    'title' => 'Paket Camila Jiddan',
+    'priceMatang' => '2,000,000',
+    'priceNasiBox' => '3,200,000',
+    'tusuk' => 300,
+    'box' => 80,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://wa.link/wp27ma'
+  ],
+  [
+    'id' => 'DarMafaza',
+    'title' => 'Paket Dar Mafaza',
+    'priceMatang' => '2,150,000',
+    'priceNasiBox' => '3,650,000',
+    'tusuk' => 350,
+    'box' => 100,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://wa.link/tjd1gp',
+  ],
+  [
+    'id' => 'ElLaziza',
+    'title' => 'Paket El Laziza',
+    'priceMatang' => '2,350,000',
+    'priceNasiBox' => '4,150,000',
+    'tusuk' => 400,
+    'box' => 120,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20El%20Laziza%20bisa%3F',
+  ],
+  [
+    'id' => 'Fastabiqul',
+    'title' => 'Paket Fastabiqul',
+    'priceMatang' => '2,450,000',
+    'priceNasiBox' => '4,400,000',
+    'tusuk' => 450,
+    'box' => 130,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Fastabiqul%20bisa%3F',
+  ],
+  [
+    'id' => 'Jumbo',
+    'title' => 'Paket Jumbo',
+    'priceMatang' => '2,650,000',
+    'priceNasiBox' => '4,750,000',
+    'tusuk' => 500,
+    'box' => 140,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Jumbo%20bisa%3F',
+  ],
+  [
+    'id' => 'SuperJumbo',
+    'title' => 'Paket Super Jumbo',
+    'priceMatang' => '2,900,000',
+    'priceNasiBox' => '5,150,000',
+    'tusuk' => 600,
+    'box' => 150,
+    'imageUrl' => 'image/IMG_20231025_133420_196_2.png',
+    'whatsappLink' => 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Super%20Jumbo%20bisa%3F',
+  ]
+];
+
+echo json_encode($packages);
+?>
