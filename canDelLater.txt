@@ -210,26 +210,26 @@ Here is the JavaScript code:
 
 
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('Assalamah', 'Paket Assalamah', '1,650,000', '2,400,000', 200, 50, 'image/IMG_20231025_133420_196_2.png', 'https://wa.link/0grkw2');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('Assalamah', 'Paket Assalamah', '1,650,000', '2,400,000', 200, 50, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://wa.link/0grkw2');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('BayanWadhih', 'Paket Bayan Wadhih', '1,850,000', '2,900,000', 250, 70, 'image/IMG_20231025_133420_196_2.png', 'https://wa.link/haczyg');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('BayanWadhih', 'Paket Bayan Wadhih', '1,850,000', '2,900,000', 250, 70, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://wa.link/haczyg');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('CamilaJiddan', 'Paket Camila Jiddan', '2,000,000', '3,200,000', 300, 80, 'image/IMG_20231025_133420_196_2.png', 'https://wa.link/wp27ma');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('CamilaJiddan', 'Paket Camila Jiddan', '2,000,000', '3,200,000', 300, 80, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://wa.link/wp27ma');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('DarMafaza', 'Paket Dar Mafaza', '2,150,000', '3,650,000', 350, 100, 'image/IMG_20231025_133420_196_2.png', 'https://wa.link/tjd1gp');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('DarMafaza', 'Paket Dar Mafaza', '2,150,000', '3,650,000', 350, 100, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://wa.link/tjd1gp');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('ElLaziza', 'Paket El Laziza', '2,350,000', '4,150,000', 400, 120, 'image/IMG_20231025_133420_196_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20El%20Laziza%20bisa%3F');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('ElLaziza', 'Paket El Laziza', '2,350,000', '4,150,000', 400, 120, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20El%20Laziza%20bisa%3F');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('Fastabiqul', 'Paket Fastabiqul', '2,450,000', '4,400,000', 450, 130, 'image/IMG_20231025_133420_196_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Fastabiqul%20bisa%3F');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('Fastabiqul', 'Paket Fastabiqul', '2,450,000', '4,400,000', 450, 130, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Fastabiqul%20bisa%3F');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('Jumbo', 'Paket Jumbo', '2,650,000', '4,750,000', 500, 140, 'image/IMG_20231025_133420_196_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Jumbo%20bisa%3F');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('Jumbo', 'Paket Jumbo', '2,650,000', '4,750,000', 500, 140, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Jumbo%20bisa%3F');
 
-INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
-VALUES ('SuperJumbo', 'Paket Super Jumbo', '2,900,000', '5,150,000', 600, 150, 'image/IMG_20231025_133420_196_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Super%20Jumbo%20bisa%3F');
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink)
+VALUES ('SuperJumbo', 'Paket Super Jumbo', '2,900,000', '5,150,000', 600, 150, 'image/IMG_20231025_133420_196_2.png', 'image/IMG_20231025_133420_238_2.png', 'https://api.whatsapp.com/send?phone=6285704836929&text=Assalamualaikum%20Aqiqah%20Fithrah%2C%20Saya%20mau%20tanya%20tentang%20Paket%20Super%20Jumbo%20bisa%3F');

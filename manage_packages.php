@@ -82,10 +82,11 @@
 			$tusuk = $_POST['tusuk'];
 			$box = $_POST['box'];
 			$imageUrl = $_POST['imageUrl'];
+			$image2Url = $_POST['image2Url'];
 			$whatsappLink = $_POST['whatsappLink'];
 
 			// Update the database with the new values
-			$sql = "UPDATE packages SET title='$title', priceMatang='$priceMatang', priceNasiBox='$priceNasiBox', tusuk='$tusuk', box='$box', imageUrl='$imageUrl', whatsappLink='$whatsappLink' WHERE id='$id'";
+			$sql = "UPDATE packages SET title='$title', priceMatang='$priceMatang', priceNasiBox='$priceNasiBox', tusuk='$tusuk', box='$box', imageUrl='$imageUrl', image2Url='$image2Url', whatsappLink='$whatsappLink' WHERE id='$id'";
 
 			if ($conn->query($sql) === TRUE) {
 				echo '<div class="alert alert-success" role="alert">Record updated successfully</div>';
@@ -126,11 +127,15 @@
 								<input type="text" name="box" class="form-control" value="' . $row['box'] . '">
 							</div>
 							<div class="mb-3">
-								<label for="box" class="form-label">Image URL:</label>
+								<label for="imageUrl" class="form-label">First Image URL:</label>
 								<input type="text" name="imageUrl" class="form-control" value="' . $row['imageUrl'] . '">
 							</div>
 							<div class="mb-3">
-								<label for="box" class="form-label">WhatsApp Link:</label>
+								<label for="image2Url" class="form-label">Second Image URL:</label>
+								<input type="text" name="image2Url" class="form-control" value="' . $row['image2Url'] . '">
+							</div>
+							<div class="mb-3">
+								<label for="whatsappLink" class="form-label">WhatsApp Link:</label>
 								<input type="text" name="whatsappLink" class="form-control" value="' . $row['whatsappLink'] . '">
 							</div>
 

@@ -172,9 +172,37 @@
 							<div class="modal-body">
 								<div class="container mt-5">
 									<div class="row">
-										<div class="col-md-6">
-											<img src="${package.imageUrl}" alt="Product Image" class="img-fluid">
-										</div>
+                    <div class="col-md-6">
+
+                      <div id="carouselExample${package.id}" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="${package.imageUrl}" alt="Product Image" class="img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="display-4 mb-0">${package.box} Box</h1>
+                              <p class="lead">(${package.tusuk} Tusuk)</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="${package.image2Url}" alt="Second Product Image" class="img-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h1 class="display-4 mb-0">${package.box} Box</h1>
+                              <p class="lead">(${package.tusuk} Tusuk)</p>
+                            </div>
+                          </div>
+                          <!-- Add more carousel items for additional images if needed -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample${package.id}" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample${package.id}" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                    </div>
 										<div class="col-md-6">
 											<!-- ... Content ... -->
 											<h2>${package.title}</h2>

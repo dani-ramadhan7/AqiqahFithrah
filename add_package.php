@@ -55,10 +55,11 @@
         $tusuk = $_POST['tusuk'];
         $box = $_POST['box'];
         $imageUrl = $_POST['imageUrl'];
+        $image2Url = $_POST['image2Url'];
         $whatsappLink = $_POST['whatsappLink'];
 
         // Insert new package into the database
-        $sql = "INSERT INTO packages (title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink) VALUES ('$title', '$priceMatang', '$priceNasiBox', '$tusuk', '$box', '$imageUrl', '$whatsappLink')";
+        $sql = "INSERT INTO packages (title, priceMatang, priceNasiBox, tusuk, box, imageUrl, image2Url, whatsappLink) VALUES ('$title', '$priceMatang', '$priceNasiBox', '$tusuk', '$box', '$imageUrl', '$image2Url', '$whatsappLink')";
 
         if ($conn->query($sql) === TRUE) {
             echo '<div class="alert alert-success" role="alert">New package added successfully</div>';
@@ -90,8 +91,12 @@
         <input type="text" name="box" class="form-control" required>
       </div>
       <div class="mb-3">
-        <label for="imageUrl" class="form-label">Image URL:</label>
+        <label for="imageUrl" class="form-label">First Image URL:</label>
         <input type="text" name="imageUrl" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="image2Url" class="form-label">Second Image URL:</label>
+        <input type="text" name="image2Url" class="form-control" required>
       </div>
       <div class="mb-3">
         <label for="whatsappLink" class="form-label">WhatsApp Link:</label>
