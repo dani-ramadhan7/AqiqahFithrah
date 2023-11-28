@@ -210,7 +210,7 @@ Here is the JavaScript code:
 
 
 
-  INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
+INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
 VALUES ('Assalamah', 'Paket Assalamah', '1,650,000', '2,400,000', 200, 50, 'image/IMG_20231025_133420_196_2.png', 'https://wa.link/0grkw2');
 
 INSERT INTO packages (id, title, priceMatang, priceNasiBox, tusuk, box, imageUrl, whatsappLink)
