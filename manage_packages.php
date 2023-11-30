@@ -140,13 +140,24 @@
 							</div>
 
 							<button type="submit" class="btn btn-warning" value="Update">Update</button>
-							<button type="submit" name="delete" class="btn btn-danger">Delete</button>
+							<button type="button" class="btn btn-danger" onclick="confirmDelete(' . $row['id'] . ')">Delete</button>
 					</form>';
 			}
 			echo '</div>';
 	} else {
 			echo '<div class="alert alert-warning" role="alert">0 results</div>';
 	}
+
+	echo '
+	<script>
+	function confirmDelete(id) {
+		var result = confirm("Apakah Anda yakin ingin menghapus item ini?");
+		if (result) {
+			// User clicked OK, proceed with the delete action
+			window.location.href = "delete.php?id=" + id; // replace "delete.php" with your delete script
+		}
+	}
+	</script>';
 
 	$conn->close();
 	?>
