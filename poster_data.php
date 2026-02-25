@@ -18,12 +18,12 @@ $posterData = [
         'effective_date' => 'Mulai April 2025',
     ],
     'nasi_box_packages' => [
-        ['box' => 50, 'price' => 2650000],
-        ['box' => 60, 'price' => 2900000],
-        ['box' => 80, 'price' => 3300000],
-        ['box' => 100, 'price' => 3900000],
-        ['box' => 120, 'price' => 4400000],
-        ['box' => 150, 'price' => 5200000],
+        ['id' => 'nb_50', 'box' => 50, 'price' => 2650000],
+        ['id' => 'nb_60', 'box' => 60, 'price' => 2900000],
+        ['id' => 'nb_80', 'box' => 80, 'price' => 3300000],
+        ['id' => 'nb_100', 'box' => 100, 'price' => 3900000],
+        ['id' => 'nb_120', 'box' => 120, 'price' => 4400000],
+        ['id' => 'nb_150', 'box' => 150, 'price' => 5200000],
     ],
     'nasi_box_contents' => [
         'Nasi',
@@ -38,14 +38,14 @@ $posterData = [
         'Label shohibul aqiqah',
     ],
     'matangan_packages' => [
-        ['name' => 'Hemat', 'sate' => 200, 'gulai' => 60, 'price' => 1800000],
-        ['name' => 'Fithrah 1', 'sate' => 250, 'gulai' => 70, 'price' => 1900000],
-        ['name' => 'Fithrah 2', 'sate' => 300, 'gulai' => 80, 'price' => 2050000],
-        ['name' => 'Fithrah 3', 'sate' => 350, 'gulai' => 90, 'price' => 2200000],
-        ['name' => 'Fithrah 4', 'sate' => 400, 'gulai' => 100, 'price' => 2400000],
-        ['name' => 'Fithrah 5', 'sate' => 450, 'gulai' => 120, 'price' => 2600000],
-        ['name' => 'Fithrah 6', 'sate' => 500, 'gulai' => 130, 'price' => 2800000],
-        ['name' => 'Fithrah 7', 'sate' => 550, 'gulai' => 150, 'price' => 2950000],
+        ['id' => 'mt_hemat', 'name' => 'Hemat', 'sate' => 200, 'gulai' => 60, 'price' => 1800000],
+        ['id' => 'mt_fithrah_1', 'name' => 'Fithrah 1', 'sate' => 250, 'gulai' => 70, 'price' => 1900000],
+        ['id' => 'mt_fithrah_2', 'name' => 'Fithrah 2', 'sate' => 300, 'gulai' => 80, 'price' => 2050000],
+        ['id' => 'mt_fithrah_3', 'name' => 'Fithrah 3', 'sate' => 350, 'gulai' => 90, 'price' => 2200000],
+        ['id' => 'mt_fithrah_4', 'name' => 'Fithrah 4', 'sate' => 400, 'gulai' => 100, 'price' => 2400000],
+        ['id' => 'mt_fithrah_5', 'name' => 'Fithrah 5', 'sate' => 450, 'gulai' => 120, 'price' => 2600000],
+        ['id' => 'mt_fithrah_6', 'name' => 'Fithrah 6', 'sate' => 500, 'gulai' => 130, 'price' => 2800000],
+        ['id' => 'mt_fithrah_7', 'name' => 'Fithrah 7', 'sate' => 550, 'gulai' => 150, 'price' => 2950000],
     ],
     'matangan_bonus' => [
         'Acar',
@@ -73,6 +73,16 @@ $posterData = [
         'image/-5176998582274861148_121.jpg',
     ],
 ];
+
+require_once __DIR__ . '/lib/package_repository.php';
+
+$packageCollections = loadPackageCollections(
+    $posterData['nasi_box_packages'],
+    $posterData['matangan_packages']
+);
+
+$posterData['nasi_box_packages'] = $packageCollections['nasi_box_packages'];
+$posterData['matangan_packages'] = $packageCollections['matangan_packages'];
 
 function formatRupiah(int $amount): string
 {

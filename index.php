@@ -20,6 +20,7 @@ $copyrightYear = date('Y');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= escapeHtml($business['name']); ?></title>
+    <link rel="icon" type="image/jpeg" href="image/icon_aqiqah.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
@@ -52,6 +53,14 @@ $copyrightYear = date('Y');
         .text-small {
             font-size: 0.95rem;
         }
+
+        .brand-icon {
+            width: 52px;
+            height: 52px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 
@@ -60,7 +69,10 @@ $copyrightYear = date('Y');
         <div class="container py-5">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-8">
-                    <h1 class="display-5 fw-bold mb-2"><?= escapeHtml($business['name']); ?></h1>
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <img src="image/icon_aqiqah.jpeg" alt="Icon Aqiqah Fithrah" class="brand-icon">
+                        <h1 class="display-5 fw-bold mb-0"><?= escapeHtml($business['name']); ?></h1>
+                    </div>
                     <p class="lead mb-4"><?= escapeHtml($business['tagline']); ?></p>
                     <div class="d-grid gap-2 d-sm-flex">
                         <a class="btn btn-dark btn-lg px-4" href="<?= escapeHtml($business['whatsapp_link']); ?>" target="_blank" rel="noopener">
@@ -262,7 +274,8 @@ $copyrightYear = date('Y');
                 </div>
             </div>
             <hr class="my-4">
-            <p class="text-center mb-0">&copy; <?= escapeHtml((string) $copyrightYear); ?> <?= escapeHtml($business['name']); ?>. All rights reserved.</p>
+            <p class="text-center mb-1">&copy; <?= escapeHtml((string) $copyrightYear); ?> <?= escapeHtml($business['name']); ?>. All rights reserved.</p>
+            <p class="text-center mb-0"><a class="link-dark" href="admin/login.php">Admin Dashboard</a></p>
         </div>
     </footer>
 

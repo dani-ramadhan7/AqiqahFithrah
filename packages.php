@@ -19,6 +19,7 @@ $payload = [
 foreach ($posterData['nasi_box_packages'] as $package) {
     $packageName = 'Paket ' . (int) $package['box'] . ' Box';
     $payload['nasi_box_packages'][] = [
+        'id' => (string) ($package['id'] ?? ''),
         'box' => (int) $package['box'],
         'price' => (int) $package['price'],
         'price_display' => formatRupiah((int) $package['price']),
@@ -29,6 +30,7 @@ foreach ($posterData['nasi_box_packages'] as $package) {
 foreach ($posterData['matangan_packages'] as $package) {
     $packageName = 'Paket ' . $package['name'];
     $payload['matangan_packages'][] = [
+        'id' => (string) ($package['id'] ?? ''),
         'name' => $package['name'],
         'sate' => (int) $package['sate'],
         'gulai' => (int) $package['gulai'],
