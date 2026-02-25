@@ -58,7 +58,7 @@ $posterData = [
         'Kambing yang sudah cukup umur satu tahun dan kriteria syar\'i lainnya',
         'Resep masakan dari koki profesional',
         'Gratis ongkos kirim untuk wilayah Surabaya dan Sidoarjo',
-        'Dapat diPesan melalui WhatsAppsApp atau datang langsung ke kantor',
+        'Dapat di pesan melalui WhatsApp atau datang langsung ke kantor',
         'Bisa memilih menu sate dan gulai atau krengsengan dan gulai',
         'Jika ada sisa makanan dari paket nasi box, akan kami kirimkan secara terpisah.',
     ],
