@@ -61,6 +61,20 @@ $copyrightYear = date('Y');
             border-radius: 50%;
             border: 2px solid rgba(0, 0, 0, 0.15);
         }
+
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1080;
+        }
     </style>
 </head>
 
@@ -278,6 +292,18 @@ $copyrightYear = date('Y');
             <p class="text-center mb-0"><a class="link-dark" href="admin/login.php">Admin Dashboard</a></p>
         </div>
     </footer>
+
+    <a
+        href="<?= escapeHtml($business['whatsapp_link']); ?>"
+        class="btn btn-success whatsapp-float"
+        target="_blank"
+        rel="noopener"
+        aria-label="Chat WhatsApp Aqiqah Fithrah"
+        title="Chat WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 8.013 0C3.66 0 .123 3.537.123 7.89a7.86 7.86 0 0 0 1.061 3.95L0 16l4.273-1.114a7.88 7.88 0 0 0 3.74.954h.003c4.351 0 7.888-3.537 7.888-7.89a7.84 7.84 0 0 0-2.303-5.624ZM8.016 14.53h-.003a6.6 6.6 0 0 1-3.36-.92l-.24-.142-2.535.661.676-2.471-.156-.254A6.58 6.58 0 0 1 1.43 7.89c0-3.635 2.957-6.592 6.59-6.592a6.56 6.56 0 0 1 4.686 1.947 6.55 6.55 0 0 1 1.933 4.66c-.002 3.635-2.958 6.59-6.593 6.59Zm3.614-4.942c-.198-.099-1.173-.579-1.355-.646-.181-.066-.313-.099-.445.099-.132.198-.512.645-.627.778-.115.132-.23.149-.428.05-.198-.1-.835-.308-1.591-.981-.588-.524-.985-1.171-1.1-1.369-.115-.198-.012-.305.086-.403.089-.088.198-.23.297-.347.099-.115.132-.198.198-.33.066-.132.033-.248-.017-.347-.049-.099-.445-1.074-.61-1.469-.16-.383-.323-.33-.445-.337l-.379-.007a.73.73 0 0 0-.528.248c-.181.198-.693.677-.693 1.65s.71 1.914.809 2.046c.099.132 1.397 2.134 3.386 2.991.473.205.842.327 1.13.418.474.151.905.13 1.246.079.38-.057 1.173-.479 1.339-.941.165-.463.165-.86.115-.941-.049-.082-.181-.132-.38-.231Z"/>
+        </svg>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

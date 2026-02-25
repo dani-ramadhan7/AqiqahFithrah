@@ -113,7 +113,9 @@ function normalizeNasiBoxPackageList(array $packages): array
 
     usort(
         $normalized,
-        static fn(array $first, array $second): int => (int) $first['box'] <=> (int) $second['box']
+        static function (array $first, array $second): int {
+            return (int) $first['box'] <=> (int) $second['box'];
+        }
     );
 
     return $normalized;
@@ -139,7 +141,9 @@ function normalizeMatanganPackageList(array $packages): array
 
     usort(
         $normalized,
-        static fn(array $first, array $second): int => (int) $first['sate'] <=> (int) $second['sate']
+        static function (array $first, array $second): int {
+            return (int) $first['sate'] <=> (int) $second['sate'];
+        }
     );
 
     return $normalized;

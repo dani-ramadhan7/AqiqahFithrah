@@ -131,7 +131,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $nasiBoxPackages = array_values(
                     array_filter(
                         $nasiBoxPackages,
-                        static fn(array $package): bool => (string) ($package['id'] ?? '') !== $id
+                        static function (array $package) use ($id): bool {
+                            return (string) ($package['id'] ?? '') !== $id;
+                        }
                     )
                 );
 
@@ -196,7 +198,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $matanganPackages = array_values(
                     array_filter(
                         $matanganPackages,
-                        static fn(array $package): bool => (string) ($package['id'] ?? '') !== $id
+                        static function (array $package) use ($id): bool {
+                            return (string) ($package['id'] ?? '') !== $id;
+                        }
                     )
                 );
 
