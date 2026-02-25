@@ -1,29 +1,41 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_aqiqahfithrah";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+declare(strict_types=1);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+require __DIR__ . '/poster_data.php';
+
+header('Content-Type: application/json; charset=utf-8');
+
+$payload = [
+    'business' => $posterData['business'],
+    'nasi_box_packages' => [],
+    'matangan_packages' => [],
+    'nasi_box_contents' => $posterData['nasi_box_contents'],
+    'matangan_bonus' => $posterData['matangan_bonus'],
+    'menu_options' => $posterData['menu_options'],
+    'free_delivery' => $posterData['free_delivery'],
+];
+
+foreach ($posterData['nasi_box_packages'] as $package) {
+    $packageName = 'Paket ' . (int) $package['box'] . ' Box';
+    $payload['nasi_box_packages'][] = [
+        'box' => (int) $package['box'],
+        'price' => (int) $package['price'],
+        'price_display' => formatRupiah((int) $package['price']),
+        'whatsapp_link' => buildWhatsappPackageLink($packageName),
+    ];
 }
 
-$sql = "SELECT * FROM packages";
-$result = $conn->query($sql);
-
-$packages = array();
-
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        $packages[] = $row;
-    }
+foreach ($posterData['matangan_packages'] as $package) {
+    $packageName = 'Paket ' . $package['name'];
+    $payload['matangan_packages'][] = [
+        'name' => $package['name'],
+        'sate' => (int) $package['sate'],
+        'gulai' => (int) $package['gulai'],
+        'price' => (int) $package['price'],
+        'price_display' => formatRupiah((int) $package['price']),
+        'whatsapp_link' => buildWhatsappPackageLink($packageName),
+    ];
 }
 
-$conn->close();
-
-echo json_encode($packages);
-?>
+echo json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
