@@ -22,8 +22,8 @@ File berikut membaca data dari sumber yang sama:
 
 Kredensial default:
 
-- Username: `admin`
-- Password: `admin123`
+- Username: `*****`
+- Password: `*******3`
 
 Simpan paket hasil CRUD ada di:
 
